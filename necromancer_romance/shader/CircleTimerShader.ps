@@ -1,0 +1,112 @@
+// GLOBALS //
+cbuffer global
+{	
+	float fTime;
+	float alpha;
+	float temp0;
+	float temp1;
+	Texture2D shaderTextures[2];
+	SamplerState SampleType;
+}
+
+#define PI				3.14159265359f
+#define PI_2			6.28318530718f
+
+#define RADIUS_BIG		0.50f
+#define RADIUS_SMALL	0.41f
+
+// TYPEDEFS //
+struct PixelInputType
+{
+	float4 position : SV_POSITION;
+	float2 tex : TEXCOORD0;
+};
+
+float4 TexturePixelShader(PixelInputType input) : SV_TARGET
+{   
+   float4 Result = 0;
+   float4 c0 = shaderTextures[0].Sample(SampleType, input.tex);
+   float4 c1 = shaderTextures[1].Sample(SampleType, input.tex);
+   
+   float d = distance(float2(0.5f, 0.5f), input.tex);
+   
+   float2 zeroVec = normalize(float2(0.0f, 1.0f));
+   float2 texVec = normalize(float2(0.5f-input.tex.x, 0.5f-input.tex.y));
+   
+   float btwRadian = acos(dot(zeroVec, texVec));
+   float timeRadian = acos(cos(fTime * PI_2));
+
+   float4 alphaColor   = float4(0.00f, 0.00f, 0.00f, 1.00f); // after blend.
+   float4 passedColor  = float4(0.13f, 0.7f, 0.00f, alpha);
+   float4 remainColor   = float4(0.13f, 0.13f, 0.13f, alpha);
+   
+   if(fTime >= 0.6666666667f) {
+      passedColor = float4(1.00f, 0.24f, 0.24f, alpha);
+   }
+   float4 alphaValue = 0;
+   alphaValue.r = c0.a * alpha;
+   alphaValue.g = c0.a * alpha;
+   alphaValue.b = c0.a * alpha;
+   alphaValue.a = alpha;
+
+   Result = (alphaValue * c0) + ((1.0f - alphaValue) * c1);
+
+   if(input.tex.x > 0.5f)
+   {
+      if(fTime < 0.5f)
+      {
+         if( d > RADIUS_BIG ) {
+            Result = (alphaColor * c0) + ((1.0f - alphaColor) * c1);
+         }
+         else if( d > RADIUS_SMALL )
+         {
+            if(btwRadian < timeRadian) {
+               Result = passedColor;
+            }
+            else {
+               Result = remainColor;
+            }
+         }
+      }
+      else
+      {
+         if( d > RADIUS_BIG ) {
+            Result = (alphaColor * c0) + ((1.0f - alphaColor) * c1);
+         }
+         else if( d > RADIUS_SMALL ) {
+            Result = passedColor;
+         }
+      }
+   }
+   else
+   {
+      if(fTime >= 0.5f)
+      {
+         if( d > RADIUS_BIG ) {
+            Result = (alphaColor * c0) + ((1.0f - alphaColor) * c1);
+         }
+         else if( d > RADIUS_SMALL )
+         {
+            if(btwRadian > timeRadian) {
+               Result = passedColor;
+            }
+            else {
+               Result = remainColor;
+            }
+         }
+      }
+      else
+      {
+         if( d > RADIUS_BIG ) {
+            Result = (alphaColor * c0) + ((1.0f - alphaColor) * c1);
+         }
+         else if( d > RADIUS_SMALL ) {
+            Result = remainColor;
+         }
+      }
+   }
+
+   Result = saturate(Result);
+
+   return Result;
+}

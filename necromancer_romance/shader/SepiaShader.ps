@@ -1,0 +1,46 @@
+// GLOBALS //
+cbuffer global
+{
+	float red;
+	float blue;
+	float green;
+	float alpha;
+	Texture2D shaderTextures[2];
+	SamplerState SampleType;
+}
+
+
+// TYPEDEFS //
+struct PixelInputType
+{
+    float4 position : SV_POSITION;
+    float2 tex : TEXCOORD0;
+};
+
+// Pixel Shader
+float4 TexturePixelShader(PixelInputType input) : SV_TARGET
+{
+	float4 color1;
+	float4 color2;
+    float4 alphaValue;
+    float4 sepiaColor;
+	float4 blendColor;
+
+    color1 = shaderTextures[0].Sample(SampleType, input.tex);
+	color2 = shaderTextures[1].Sample(SampleType, input.tex);
+
+	sepiaColor.r = (color1.r * 0.393f) + (color1.g * 0.769f) + (color1.b * 0.189f);
+	sepiaColor.g = (color1.r * 0.349f) + (color1.g * 0.686f) + (color1.b * 0.168f);
+	sepiaColor.b = (color1.r * 0.272f) + (color1.g * 0.534f) + (color1.b * 0.131f);
+	sepiaColor.a = color1.a;
+
+	alphaValue.r = color1.a * alpha;
+	alphaValue.g = color1.a * alpha;
+	alphaValue.b = color1.a * alpha;
+	alphaValue.a = alpha;
+
+	blendColor = (alphaValue * sepiaColor) + ((1.0 - alphaValue) * color2);
+	blendColor = saturate(blendColor);
+
+	return blendColor;	
+}

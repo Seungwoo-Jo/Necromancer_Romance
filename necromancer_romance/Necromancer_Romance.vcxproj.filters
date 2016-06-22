@@ -1,0 +1,716 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Shader">
+      <UniqueIdentifier>{26cbb21b-bd42-48b6-91a8-e5122be3582b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework">
+      <UniqueIdentifier>{04d91ad1-a109-46d9-959c-a4879cb81838}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Source">
+      <UniqueIdentifier>{eb897c85-c081-4238-96c9-690489bddd04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework\Header">
+      <UniqueIdentifier>{71cc01b2-ebdb-4159-b716-8ccf15f222b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Managers">
+      <UniqueIdentifier>{4eee3576-f6a0-46d2-943f-379bec71b7a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scenes">
+      <UniqueIdentifier>{d7cd56c9-066d-4fe6-bcd7-50634a9c09b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects">
+      <UniqueIdentifier>{d8722a47-5324-4b21-a3ee-ae3f477977a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Managers\Header">
+      <UniqueIdentifier>{d4e58baa-9445-4243-bbb4-9600c1bb363d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Managers\Source">
+      <UniqueIdentifier>{d8ef7ffe-a2d3-441c-8e10-f914df224437}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scenes\Header">
+      <UniqueIdentifier>{44427c61-31de-4829-970a-c0e6c73246a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scenes\Source">
+      <UniqueIdentifier>{66892142-3383-4b0e-b5cd-cf4e1948b87d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\Common">
+      <UniqueIdentifier>{4e688b78-684b-45cd-8722-f2eef3977247}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\Common\Header">
+      <UniqueIdentifier>{7e33850b-0b82-4651-9fde-d801b74f8202}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\Common\Source">
+      <UniqueIdentifier>{ee2abf37-1e1f-4d97-b7bb-46d1ea98fc57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\Skills">
+      <UniqueIdentifier>{737ea96f-4320-44af-9cbc-e7001e5b3d66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\Skills\Header">
+      <UniqueIdentifier>{4945cd87-cedf-45c1-a9b0-01fa00facf9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\Skills\Source">
+      <UniqueIdentifier>{609af0b5-1384-4d43-a5d3-d331ce1cf601}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\Monsters">
+      <UniqueIdentifier>{23d2915a-6246-4c1e-9a5d-8891367a80db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\Cards">
+      <UniqueIdentifier>{13b83f66-cdaa-44a2-8412-a66e07af9c13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\Cards\Header">
+      <UniqueIdentifier>{68195dec-b7d5-484a-a8b4-8c4547fac070}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\Cards\Source">
+      <UniqueIdentifier>{59dd93ed-a439-4a2e-bb35-b4aba2c8574a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\Monsters\Header">
+      <UniqueIdentifier>{1e073b35-c674-431a-aaa2-ed3262539ff7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\Monsters\Source">
+      <UniqueIdentifier>{a66049cd-50f4-4ef8-ae13-05206bf376ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Effects">
+      <UniqueIdentifier>{c95d4837-b01c-4f20-9f69-ef3b7fe8eedc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Effects\CardEffect">
+      <UniqueIdentifier>{00924a97-c6a1-43c0-a2c3-b8089b32885e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Effects\CardEffect\Sources">
+      <UniqueIdentifier>{d9a0c393-4e75-46d3-b796-a6ad8e30660e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Effects\CardEffect\Headers">
+      <UniqueIdentifier>{8f2eefd2-9dc6-418d-9094-ed24d66d8ed6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Effects\MonsterEffect">
+      <UniqueIdentifier>{15bdde90-edd8-443d-be6e-c8ef23a937da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Effects\MonsterEffect\Headers">
+      <UniqueIdentifier>{6c1af3a9-cbda-437a-8a34-cd33e9e2e973}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Effects\MonsterEffect\Sources">
+      <UniqueIdentifier>{39010634-813d-41e1-97c0-b0f9199adb45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Effects\Passive">
+      <UniqueIdentifier>{cff74db1-58fc-4941-9a45-6c4c7cd65cda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Effects\Passive\Header">
+      <UniqueIdentifier>{d759a82d-8b50-4a48-96cb-74df2862a814}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Effects\Passive\Source">
+      <UniqueIdentifier>{61012cad-c7ed-464e-91ef-d329340b0d74}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\framework\CBitmap.cpp">
+      <Filter>Framework\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\CCamera.cpp">
+      <Filter>Framework\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\CDirect3d.cpp">
+      <Filter>Framework\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\CGraphics.cpp">
+      <Filter>Framework\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\CInput.cpp">
+      <Filter>Framework\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\common.cpp">
+      <Filter>Framework\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\CSystem.cpp">
+      <Filter>Framework\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\CTexture.cpp">
+      <Filter>Framework\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\CTextureShader.cpp">
+      <Filter>Framework\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scenes\CScene.cpp">
+      <Filter>Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\managers\CSceneManager.cpp">
+      <Filter>Managers\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\managers\CObjectManager.cpp">
+      <Filter>Managers\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\CTime.cpp">
+      <Filter>Framework\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\CFont.cpp">
+      <Filter>Framework\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\managers\CBattleManager.cpp">
+      <Filter>Managers\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\managers\CNero.cpp">
+      <Filter>Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scenes\CScene_Town.cpp">
+      <Filter>Scenes\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scenes\CScene_Intro.cpp">
+      <Filter>Scenes\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\objects\CObject_Logo.cpp">
+      <Filter>Objects\Common\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\managers\CCardManager.cpp">
+      <Filter>Managers\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scenes\CScene_Title.cpp">
+      <Filter>Scenes\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\objects\CObject_Background.cpp">
+      <Filter>Objects\Common\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scenes\CScene_Field.cpp">
+      <Filter>Scenes\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scenes\CScene_Inn.cpp">
+      <Filter>Scenes\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scenes\CScene_Preload.cpp">
+      <Filter>Scenes\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\managers\CMonsterManager.cpp">
+      <Filter>Managers\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\main.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="src\objects\CObject_Cardgauge.cpp">
+      <Filter>Objects\Common\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\objects\CObject_Monstergauge.cpp">
+      <Filter>Objects\Common\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\objects\CObject_Skillselect.cpp">
+      <Filter>Objects\Common\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\objects\CSkill.cpp">
+      <Filter>Objects\Skills</Filter>
+    </ClCompile>
+    <ClCompile Include="src\managers\CSkillManager.cpp">
+      <Filter>Managers\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\objects\CCard.cpp">
+      <Filter>Objects\Cards</Filter>
+    </ClCompile>
+    <ClCompile Include="src\objects\CCard_Nero.cpp">
+      <Filter>Objects\Cards\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\objects\CSkill_ChangeMember.cpp">
+      <Filter>Objects\Skills\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\objects\CMonster.cpp">
+      <Filter>Objects\Monsters</Filter>
+    </ClCompile>
+    <ClCompile Include="src\objects\CObject.cpp">
+      <Filter>Objects\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\objects\CObject_MemberChange.cpp">
+      <Filter>Objects\Common\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\objects\CObject_ChangeButton.cpp">
+      <Filter>Objects\Common\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\objects\CObject_Common.cpp">
+      <Filter>Objects\Common\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\objects\CObject_Target.cpp">
+      <Filter>Objects\Common\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\objects\CObject_FieldButton.cpp">
+      <Filter>Objects\Common\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\objects\CObject_InnButton.cpp">
+      <Filter>Objects\Common\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\objects\CObject_Rotategauge.cpp">
+      <Filter>Objects\Common\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\CSound.cpp">
+      <Filter>Framework\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\objects\CObject_MainButton.cpp">
+      <Filter>Objects\Common\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\objects\CCard_John.cpp">
+      <Filter>Objects\Cards\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\objects\CCard_Hilde.cpp">
+      <Filter>Objects\Cards\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\objects\CCard_Ayrin.cpp">
+      <Filter>Objects\Cards\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\objects\CCard_Day.cpp">
+      <Filter>Objects\Cards\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\objects\CCard_Morrighu.cpp">
+      <Filter>Objects\Cards\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\objects\CCard_Scathach.cpp">
+      <Filter>Objects\Cards\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\objects\CCard_Rene.cpp">
+      <Filter>Objects\Cards\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\objects\CCard_Iron.cpp">
+      <Filter>Objects\Cards\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\objects\CCard_Sound.cpp">
+      <Filter>Objects\Cards\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\objects\CCard_Eadric.cpp">
+      <Filter>Objects\Cards\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\objects\CCard_Melrose.cpp">
+      <Filter>Objects\Cards\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\objects\CObject_Status.cpp">
+      <Filter>Objects\Common\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\objects\CObject_StatusButton.cpp">
+      <Filter>Objects\Common\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\objects\CObject_ExploreBar.cpp">
+      <Filter>Objects\Common\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\objects\CObject_Scout.cpp">
+      <Filter>Objects\Common\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\objects\CObject_PartySlot.cpp">
+      <Filter>Objects\Common\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\objects\CObject_ExploreButton.cpp">
+      <Filter>Objects\Common\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\objects\CObject_ExploreResult.cpp">
+      <Filter>Objects\Common\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\objects\CMonster_Wolfrider.cpp">
+      <Filter>Objects\Monsters\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\objects\CMonster_Warewolf.cpp">
+      <Filter>Objects\Monsters\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\objects\CEffect.cpp">
+      <Filter>Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="src\objects\CObject_Num.cpp">
+      <Filter>Objects\Common\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\objects\CEffect_IceSpike.cpp">
+      <Filter>Effects\CardEffect\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\objects\CEffect_Hack.cpp">
+      <Filter>Effects\CardEffect\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\objects\CObject_Chain.cpp">
+      <Filter>Objects\Common\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\objects\CObject_ScoutButton.cpp">
+      <Filter>Objects\Common\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\objects\CEffect_IceBoom.cpp">
+      <Filter>Effects\CardEffect\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\objects\CEffect_IceArrow.cpp">
+      <Filter>Effects\CardEffect\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\objects\CEffect_Chop.cpp">
+      <Filter>Effects\CardEffect\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scenes\CScene_Credit.cpp">
+      <Filter>Scenes\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\objects\CMonster_Lupus.cpp">
+      <Filter>Objects\Monsters\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\objects\CObject_TownButton.cpp">
+      <Filter>Objects\Common\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\objects\CEffect_KeroseneLamp.cpp">
+      <Filter>Effects\CardEffect\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\objects\CEffect_DrawingSword.cpp">
+      <Filter>Effects\CardEffect\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\objects\CEffect_Claw.cpp">
+      <Filter>Effects\MonsterEffect\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\objects\CEffect_Tornado.cpp">
+      <Filter>Effects\CardEffect\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\objects\CEffect_RollingAttack.cpp">
+      <Filter>Effects\CardEffect\Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\objects\CPassive.cpp">
+      <Filter>Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="src\objects\CObject_SpeechBubble.cpp">
+      <Filter>Objects\Common\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\objects\CEffect_SpeechBubble.cpp">
+      <Filter>Effects\CardEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="src\objects\CObject_TalkWindow.cpp">
+      <Filter>Objects\Common\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\managers\CScriptManager.cpp">
+      <Filter>Managers\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scenes\CScene_Story01.cpp">
+      <Filter>Scenes\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\scenes\CScene_Story02.cpp">
+      <Filter>Scenes\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\objects\CMonster_Shoa.cpp">
+      <Filter>Objects\Monsters\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\objects\CMonster_Armored.cpp">
+      <Filter>Objects\Monsters\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\objects\CMonster_Maid.cpp">
+      <Filter>Objects\Monsters\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\objects\CMonster_Succubus.cpp">
+      <Filter>Objects\Monsters\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\objects\CMonster_Shoa2.cpp">
+      <Filter>Objects\Monsters\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\objects\CCard_Aoife.cpp">
+      <Filter>Objects\Cards\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\objects\CMonster_God.cpp">
+      <Filter>Objects\Monsters\Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shader\texture.ps">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="shader\texture.vs">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="shader\BlackShader.ps">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="shader\SepiaShader.ps">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="shader\DarkShader.ps">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="shader\WalkShader.ps">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="shader\RedShader.ps">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="shader\CircleTimerShader.ps">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="shader\TurnShader.ps">
+      <Filter>Shader</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\framework\CBitmap.h">
+      <Filter>Framework\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\CCamera.h">
+      <Filter>Framework\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\CDirect3d.h">
+      <Filter>Framework\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\CGraphics.h">
+      <Filter>Framework\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\CInput.h">
+      <Filter>Framework\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\common.h">
+      <Filter>Framework\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\CSystem.h">
+      <Filter>Framework\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\CTexture.h">
+      <Filter>Framework\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\CTextureShader.h">
+      <Filter>Framework\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scenes\CScene.h">
+      <Filter>Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\managers\CSceneManager.h">
+      <Filter>Managers\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\managers\CObjectManager.h">
+      <Filter>Managers\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\CTime.h">
+      <Filter>Framework\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\CFont.h">
+      <Filter>Framework\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\managers\CBattleManager.h">
+      <Filter>Managers\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\managers\CNero.h">
+      <Filter>Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scenes\CScene_Town.h">
+      <Filter>Scenes\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scenes\CScene_Intro.h">
+      <Filter>Scenes\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\objects\CObject_Logo.h">
+      <Filter>Objects\Common\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\managers\CCardManager.h">
+      <Filter>Managers\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scenes\CScene_Title.h">
+      <Filter>Scenes\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\objects\CObject_Background.h">
+      <Filter>Objects\Common\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scenes\CScene_Inn.h">
+      <Filter>Scenes\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scenes\CScene_Field.h">
+      <Filter>Scenes\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scenes\CScene_Preload.h">
+      <Filter>Scenes\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\managers\CMonsterManager.h">
+      <Filter>Managers\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\objects\CObject_Cardgauge.h">
+      <Filter>Objects\Common\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\objects\CObject_Monstergauge.h">
+      <Filter>Objects\Common\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\objects\CObject_Skillselect.h">
+      <Filter>Objects\Common\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\objects\CSkill.h">
+      <Filter>Objects\Skills</Filter>
+    </ClInclude>
+    <ClInclude Include="src\managers\CSkillManager.h">
+      <Filter>Managers\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\objects\CCard.h">
+      <Filter>Objects\Cards</Filter>
+    </ClInclude>
+    <ClInclude Include="src\objects\CCard_Nero.h">
+      <Filter>Objects\Cards\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\objects\CSkill_ChangeMember.h">
+      <Filter>Objects\Skills\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\objects\CMonster.h">
+      <Filter>Objects\Monsters</Filter>
+    </ClInclude>
+    <ClInclude Include="src\objects\CObject.h">
+      <Filter>Objects\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\objects\CObject_MemberChange.h">
+      <Filter>Objects\Common\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\objects\CObject_ChangeButton.h">
+      <Filter>Objects\Common\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\objects\CObject_Common.h">
+      <Filter>Objects\Common\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\objects\CObject_Target.h">
+      <Filter>Objects\Common\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\objects\CObject_FieldButton.h">
+      <Filter>Objects\Common\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\objects\CObject_InnButton.h">
+      <Filter>Objects\Common\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\objects\CObject_Rotategauge.h">
+      <Filter>Objects\Common\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\CSound.h">
+      <Filter>Framework\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\objects\CObject_MainButton.h">
+      <Filter>Objects\Common\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\objects\CCard_John.h">
+      <Filter>Objects\Cards\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\objects\CCard_Hilde.h">
+      <Filter>Objects\Cards\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\objects\CCard_Ayrin.h">
+      <Filter>Objects\Cards\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\objects\CCard_Day.h">
+      <Filter>Objects\Cards\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\objects\CCard_Morrighu.h">
+      <Filter>Objects\Cards\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\objects\CCard_Scathach.h">
+      <Filter>Objects\Cards\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\objects\CCard_Aoife.h">
+      <Filter>Objects\Cards\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\objects\CCard_Rene.h">
+      <Filter>Objects\Cards\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\objects\CCard_Iron.h">
+      <Filter>Objects\Cards\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\objects\CCard_Sound.h">
+      <Filter>Objects\Cards\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\objects\CCard_Eadric.h">
+      <Filter>Objects\Cards\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\objects\CCard_Melrose.h">
+      <Filter>Objects\Cards\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\objects\CObject_Status.h">
+      <Filter>Objects\Common\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\objects\CObject_StatusButton.h">
+      <Filter>Objects\Common\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\objects\CObject_ExploreBar.h">
+      <Filter>Objects\Common\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\objects\CObject_Scout.h">
+      <Filter>Objects\Common\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\objects\CObject_PartySlot.h">
+      <Filter>Objects\Common\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\objects\CObject_ExploreButton.h">
+      <Filter>Objects\Common\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\objects\CObject_ExploreResult.h">
+      <Filter>Objects\Common\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\objects\CMonster_Wolfrider.h">
+      <Filter>Objects\Monsters\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\objects\CMonster_Warewolf.h">
+      <Filter>Objects\Monsters\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\objects\CEffect.h">
+      <Filter>Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="src\objects\CObject_Num.h">
+      <Filter>Objects\Common\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\objects\CEffect_Hack.h">
+      <Filter>Effects\CardEffect\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\objects\CEffect_IceSpike.h">
+      <Filter>Effects\CardEffect\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\objects\CObject_Chain.h">
+      <Filter>Objects\Common\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\objects\CObject_ScoutButton.h">
+      <Filter>Objects\Common\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\objects\CEffect_IceBoom.h">
+      <Filter>Effects\CardEffect\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\objects\CEffect_IceArrow.h">
+      <Filter>Effects\CardEffect\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\objects\CEffect_Chop.h">
+      <Filter>Effects\CardEffect\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scenes\CScene_Credit.h">
+      <Filter>Scenes\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\objects\CMonster_Lupus.h">
+      <Filter>Objects\Monsters\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\objects\CObject_TownButton.h">
+      <Filter>Objects\Common\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\objects\CEffect_KeroseneLamp.h">
+      <Filter>Effects\CardEffect\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\objects\CEffect_DrawingSword.h">
+      <Filter>Effects\CardEffect\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\objects\CEffect_Claw.h">
+      <Filter>Effects\MonsterEffect\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\objects\CEffect_Tornado.h">
+      <Filter>Effects\CardEffect\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\objects\CEffect_RollingAttack.h">
+      <Filter>Effects\CardEffect\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\objects\CPassive.h">
+      <Filter>Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="src\objects\CObject_SpeechBubble.h">
+      <Filter>Objects\Common\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\objects\CEffect_SpeechBubble.h">
+      <Filter>Effects\CardEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="src\objects\CObject_TalkWindow.h">
+      <Filter>Objects\Common\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\managers\CScriptManager.h">
+      <Filter>Managers\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scenes\CScene_Story01.h">
+      <Filter>Scenes\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\scenes\CScene_Story02.h">
+      <Filter>Scenes\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\objects\CMonster_Shoa.h">
+      <Filter>Objects\Monsters\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\objects\CMonster_Armored.h">
+      <Filter>Objects\Monsters\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\objects\CMonster_Maid.h">
+      <Filter>Objects\Monsters\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\objects\CMonster_Succubus.h">
+      <Filter>Objects\Monsters\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\objects\CMonster_Shoa2.h">
+      <Filter>Objects\Monsters\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\objects\CMonster_God.h">
+      <Filter>Objects\Monsters\Header</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\framework\CBitmap.cpp" />
+    <ClCompile Include="src\framework\CCamera.cpp" />
+    <ClCompile Include="src\framework\CDirect3d.cpp" />
+    <ClCompile Include="src\framework\CFont.cpp" />
+    <ClCompile Include="src\framework\CGraphics.cpp" />
+    <ClCompile Include="src\framework\CInput.cpp" />
+    <ClCompile Include="src\framework\common.cpp" />
+    <ClCompile Include="src\framework\CSound.cpp" />
+    <ClCompile Include="src\framework\CSystem.cpp" />
+    <ClCompile Include="src\framework\CTexture.cpp" />
+    <ClCompile Include="src\framework\CTextureShader.cpp" />
+    <ClCompile Include="src\framework\CTime.cpp" />
+    <ClCompile Include="src\framework\main.cpp" />
+    <ClCompile Include="src\managers\CBattleManager.cpp" />
+    <ClCompile Include="src\managers\CCardManager.cpp" />
+    <ClCompile Include="src\managers\CMonsterManager.cpp" />
+    <ClCompile Include="src\managers\CNero.cpp" />
+    <ClCompile Include="src\managers\CObjectManager.cpp" />
+    <ClCompile Include="src\managers\CSceneManager.cpp" />
+    <ClCompile Include="src\managers\CScriptManager.cpp" />
+    <ClCompile Include="src\managers\CSkillManager.cpp" />
+    <ClCompile Include="src\objects\CCard.cpp" />
+    <ClCompile Include="src\objects\CCard_Aoife.cpp" />
+    <ClCompile Include="src\objects\CCard_Ayrin.cpp" />
+    <ClCompile Include="src\objects\CCard_Day.cpp" />
+    <ClCompile Include="src\objects\CCard_Eadric.cpp" />
+    <ClCompile Include="src\objects\CCard_Hilde.cpp" />
+    <ClCompile Include="src\objects\CCard_Iron.cpp" />
+    <ClCompile Include="src\objects\CCard_Melrose.cpp" />
+    <ClCompile Include="src\objects\CCard_Morrighu.cpp" />
+    <ClCompile Include="src\objects\CCard_Nero.cpp" />
+    <ClCompile Include="src\objects\CCard_Rene.cpp" />
+    <ClCompile Include="src\objects\CCard_Scathach.cpp" />
+    <ClCompile Include="src\objects\CCard_Sound.cpp" />
+    <ClCompile Include="src\objects\CEffect.cpp" />
+    <ClCompile Include="src\objects\CEffect_Chop.cpp" />
+    <ClCompile Include="src\objects\CEffect_Claw.cpp" />
+    <ClCompile Include="src\objects\CEffect_DrawingSword.cpp" />
+    <ClCompile Include="src\objects\CEffect_Hack.cpp" />
+    <ClCompile Include="src\objects\CEffect_IceArrow.cpp" />
+    <ClCompile Include="src\objects\CEffect_IceBoom.cpp" />
+    <ClCompile Include="src\objects\CEffect_IceSpike.cpp" />
+    <ClCompile Include="src\objects\CEffect_KeroseneLamp.cpp" />
+    <ClCompile Include="src\objects\CEffect_RollingAttack.cpp" />
+    <ClCompile Include="src\objects\CEffect_SpeechBubble.cpp" />
+    <ClCompile Include="src\objects\CEffect_Tornado.cpp" />
+    <ClCompile Include="src\objects\CMonster.cpp" />
+    <ClCompile Include="src\objects\CMonster_Armored.cpp" />
+    <ClCompile Include="src\objects\CMonster_God.cpp" />
+    <ClCompile Include="src\objects\CMonster_Lupus.cpp" />
+    <ClCompile Include="src\objects\CMonster_Maid.cpp" />
+    <ClCompile Include="src\objects\CMonster_Shoa.cpp" />
+    <ClCompile Include="src\objects\CMonster_Shoa2.cpp" />
+    <ClCompile Include="src\objects\CMonster_Succubus.cpp" />
+    <ClCompile Include="src\objects\CObject.cpp" />
+    <ClCompile Include="src\objects\CObject_Cardgauge.cpp" />
+    <ClCompile Include="src\objects\CObject_Chain.cpp" />
+    <ClCompile Include="src\objects\CObject_ChangeButton.cpp" />
+    <ClCompile Include="src\objects\CObject_Common.cpp" />
+    <ClCompile Include="src\objects\CObject_FieldButton.cpp" />
+    <ClCompile Include="src\objects\CObject_InnButton.cpp" />
+    <ClCompile Include="src\objects\CObject_Logo.cpp" />
+    <ClCompile Include="src\objects\CObject_Background.cpp" />
+    <ClCompile Include="src\objects\CObject_MainButton.cpp" />
+    <ClCompile Include="src\objects\CObject_MemberChange.cpp" />
+    <ClCompile Include="src\objects\CObject_Monstergauge.cpp" />
+    <ClCompile Include="src\objects\CObject_Num.cpp" />
+    <ClCompile Include="src\objects\CObject_Rotategauge.cpp" />
+    <ClCompile Include="src\objects\CObject_ScoutButton.cpp" />
+    <ClCompile Include="src\objects\CObject_Skillselect.cpp" />
+    <ClCompile Include="src\objects\CObject_SpeechBubble.cpp" />
+    <ClCompile Include="src\objects\CObject_Status.cpp" />
+    <ClCompile Include="src\objects\CObject_StatusButton.cpp" />
+    <ClCompile Include="src\objects\CObject_TalkWindow.cpp" />
+    <ClCompile Include="src\objects\CObject_Target.cpp" />
+    <ClCompile Include="src\objects\CObject_TownButton.cpp" />
+    <ClCompile Include="src\objects\CPassive.cpp" />
+    <ClCompile Include="src\objects\CSkill.cpp" />
+    <ClCompile Include="src\objects\CSkill_ChangeMember.cpp" />
+    <ClCompile Include="src\objects\CCard_John.cpp" />
+    <ClCompile Include="src\objects\CObject_ExploreBar.cpp" />
+    <ClCompile Include="src\objects\CObject_Scout.cpp" />
+    <ClCompile Include="src\objects\CObject_PartySlot.cpp" />
+    <ClCompile Include="src\objects\CObject_ExploreButton.cpp" />
+    <ClCompile Include="src\objects\CObject_ExploreResult.cpp" />
+    <ClCompile Include="src\objects\CMonster_Wolfrider.cpp" />
+    <ClCompile Include="src\objects\CMonster_Warewolf.cpp" />
+    <ClCompile Include="src\scenes\CScene.cpp" />
+    <ClCompile Include="src\scenes\CScene_Credit.cpp" />
+    <ClCompile Include="src\scenes\CScene_Field.cpp" />
+    <ClCompile Include="src\scenes\CScene_Inn.cpp" />
+    <ClCompile Include="src\scenes\CScene_Intro.cpp" />
+    <ClCompile Include="src\scenes\CScene_Preload.cpp" />
+    <ClCompile Include="src\scenes\CScene_Story02.cpp" />
+    <ClCompile Include="src\scenes\CScene_Title.cpp" />
+    <ClCompile Include="src\scenes\CScene_Town.cpp" />
+    <ClCompile Include="src\scenes\CScene_Story01.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shader\BlackShader.ps" />
+    <None Include="shader\CircleTimerShader.ps" />
+    <None Include="shader\DarkShader.ps" />
+    <None Include="shader\RedShader.ps" />
+    <None Include="shader\SepiaShader.ps" />
+    <None Include="shader\texture.ps" />
+    <None Include="shader\texture.vs" />
+    <None Include="shader\TurnShader.ps" />
+    <None Include="shader\WalkShader.ps" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\framework\CBitmap.h" />
+    <ClInclude Include="src\framework\CCamera.h" />
+    <ClInclude Include="src\framework\CDirect3d.h" />
+    <ClInclude Include="src\framework\CFont.h" />
+    <ClInclude Include="src\framework\CGraphics.h" />
+    <ClInclude Include="src\framework\CInput.h" />
+    <ClInclude Include="src\framework\common.h" />
+    <ClInclude Include="src\framework\CSound.h" />
+    <ClInclude Include="src\framework\CSystem.h" />
+    <ClInclude Include="src\framework\CTexture.h" />
+    <ClInclude Include="src\framework\CTextureShader.h" />
+    <ClInclude Include="src\framework\CTime.h" />
+    <ClInclude Include="src\managers\CBattleManager.h" />
+    <ClInclude Include="src\managers\CCardManager.h" />
+    <ClInclude Include="src\managers\CMonsterManager.h" />
+    <ClInclude Include="src\managers\CNero.h" />
+    <ClInclude Include="src\managers\CObjectManager.h" />
+    <ClInclude Include="src\managers\CSceneManager.h" />
+    <ClInclude Include="src\managers\CScriptManager.h" />
+    <ClInclude Include="src\managers\CSkillManager.h" />
+    <ClInclude Include="src\objects\CCard.h" />
+    <ClInclude Include="src\objects\CCard_Aoife.h" />
+    <ClInclude Include="src\objects\CCard_Ayrin.h" />
+    <ClInclude Include="src\objects\CCard_Day.h" />
+    <ClInclude Include="src\objects\CCard_Eadric.h" />
+    <ClInclude Include="src\objects\CCard_Hilde.h" />
+    <ClInclude Include="src\objects\CCard_Iron.h" />
+    <ClInclude Include="src\objects\CCard_John.h" />
+    <ClInclude Include="src\objects\CCard_Melrose.h" />
+    <ClInclude Include="src\objects\CCard_Morrighu.h" />
+    <ClInclude Include="src\objects\CCard_Nero.h" />
+    <ClInclude Include="src\objects\CCard_Rene.h" />
+    <ClInclude Include="src\objects\CCard_Scathach.h" />
+    <ClInclude Include="src\objects\CCard_Sound.h" />
+    <ClInclude Include="src\objects\CEffect.h" />
+    <ClInclude Include="src\objects\CEffect_Chop.h" />
+    <ClInclude Include="src\objects\CEffect_Claw.h" />
+    <ClInclude Include="src\objects\CEffect_DrawingSword.h" />
+    <ClInclude Include="src\objects\CEffect_Hack.h" />
+    <ClInclude Include="src\objects\CEffect_IceArrow.h" />
+    <ClInclude Include="src\objects\CEffect_IceBoom.h" />
+    <ClInclude Include="src\objects\CEffect_IceSpike.h" />
+    <ClInclude Include="src\objects\CEffect_KeroseneLamp.h" />
+    <ClInclude Include="src\objects\CEffect_RollingAttack.h" />
+    <ClInclude Include="src\objects\CEffect_SpeechBubble.h" />
+    <ClInclude Include="src\objects\CEffect_Tornado.h" />
+    <ClInclude Include="src\objects\CMonster.h" />
+    <ClInclude Include="src\objects\CMonster_Armored.h" />
+    <ClInclude Include="src\objects\CMonster_God.h" />
+    <ClInclude Include="src\objects\CMonster_Lupus.h" />
+    <ClInclude Include="src\objects\CMonster_Maid.h" />
+    <ClInclude Include="src\objects\CMonster_Shoa.h" />
+    <ClInclude Include="src\objects\CMonster_Shoa2.h" />
+    <ClInclude Include="src\objects\CMonster_Succubus.h" />
+    <ClInclude Include="src\objects\CObject.h" />
+    <ClInclude Include="src\objects\CObject_Cardgauge.h" />
+    <ClInclude Include="src\objects\CObject_Chain.h" />
+    <ClInclude Include="src\objects\CObject_ChangeButton.h" />
+    <ClInclude Include="src\objects\CObject_Common.h" />
+    <ClInclude Include="src\objects\CObject_FieldButton.h" />
+    <ClInclude Include="src\objects\CObject_InnButton.h" />
+    <ClInclude Include="src\objects\CObject_Logo.h" />
+    <ClInclude Include="src\objects\CObject_Background.h" />
+    <ClInclude Include="src\objects\CObject_MainButton.h" />
+    <ClInclude Include="src\objects\CObject_MemberChange.h" />
+    <ClInclude Include="src\objects\CObject_Monstergauge.h" />
+    <ClInclude Include="src\objects\CObject_Num.h" />
+    <ClInclude Include="src\objects\CObject_Rotategauge.h" />
+    <ClInclude Include="src\objects\CObject_ScoutButton.h" />
+    <ClInclude Include="src\objects\CObject_Skillselect.h" />
+    <ClInclude Include="src\objects\CObject_SpeechBubble.h" />
+    <ClInclude Include="src\objects\CObject_Status.h" />
+    <ClInclude Include="src\objects\CObject_StatusButton.h" />
+    <ClInclude Include="src\objects\CObject_TalkWindow.h" />
+    <ClInclude Include="src\objects\CObject_Target.h" />
+    <ClInclude Include="src\objects\CObject_TownButton.h" />
+    <ClInclude Include="src\objects\CPassive.h" />
+    <ClInclude Include="src\objects\CSkill.h" />
+    <ClInclude Include="src\objects\CSkill_ChangeMember.h" />
+    <ClInclude Include="src\objects\CObject_ExploreBar.h" />
+    <ClInclude Include="src\objects\CObject_Scout.h" />
+    <ClInclude Include="src\objects\CObject_PartySlot.h" />
+    <ClInclude Include="src\objects\CObject_ExploreButton.h" />
+    <ClInclude Include="src\objects\CObject_ExploreResult.h" />
+    <ClInclude Include="src\objects\CMonster_Wolfrider.h" />
+    <ClInclude Include="src\objects\CMonster_Warewolf.h" />
+    <ClInclude Include="src\scenes\CScene.h" />
+    <ClInclude Include="src\scenes\CScene_Credit.h" />
+    <ClInclude Include="src\scenes\CScene_Field.h" />
+    <ClInclude Include="src\scenes\CScene_Inn.h" />
+    <ClInclude Include="src\scenes\CScene_Intro.h" />
+    <ClInclude Include="src\scenes\CScene_Preload.h" />
+    <ClInclude Include="src\scenes\CScene_Story01.h" />
+    <ClInclude Include="src\scenes\CScene_Story02.h" />
+    <ClInclude Include="src\scenes\CScene_Title.h" />
+    <ClInclude Include="src\scenes\CScene_Town.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1B39468E-D9C0-4528-9B68-BD3C2F3BE9D8}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Necromancer_Romance</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>D:\FMOD Programmers API Windows\api\inc;lib;src;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <SourcePath>src;$(SourcePath)</SourcePath>
+    <LibraryPath>D:\FMOD Programmers API Windows\api\lib;lib\x86;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>D:\FMOD Programmers API Windows\api\inc;lib;src;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\FMOD Programmers API Windows\api\lib;lib\x86;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+    <SourcePath>src;$(SourcePath)</SourcePath>
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4005</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>fmodex_vc.lib;FW1FontWrapper.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4005</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>fmodex_vc.lib;FW1FontWrapper.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
